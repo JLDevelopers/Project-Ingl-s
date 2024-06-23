@@ -1,0 +1,398 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    margin-bottom: 250px;
+}
+
+
+/* NAVBAR */
+.navbar-brand img {
+    position: absolute;
+    top: 10px;
+    left: 3.5%;
+    width: 50px;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    padding: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.navbar-nav a {
+    margin: 0 15px;
+    padding: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c5c2c2;
+}
+
+#navbar {
+    min-height: 30%;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* LOGIN / REGISTER */
+/* #auth-row {
+    justify-content: space-evenly;
+} */
+
+#login-container h2,
+#register-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#login-container form,
+#register-container form {
+    max-width: 330px;
+    margin: 30px auto;
+}
+
+.btn {
+    width: 15.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.btn:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* MENSAGEM CENTRO DA TELA */
+.msg-container {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.msg {
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #000;
+    text-align: center;
+}
+
+.msg.error {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.msg.success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+/*CSS TABLE */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh; /* Reduzindo a altura para 35% da altura da tela */
+}
+
+#main-title {
+    font-size: 24px; /* Tamanho do título principal */
+    color: #333;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%; /* Largura da tabela */
+    max-width: 900px; /* Largura máxima da tabela */
+}
+
+.col-id {
+    font-weight: bolder;
+}
+
+.table th, .table td {
+    border: 1px solid #695757;
+    padding: 10px; /* Preenchimento interno das células */
+    text-align: center;
+}
+
+.table th img {
+    width: 25px;
+}
+
+#msg {
+    font-size: 16px; /* Tamanho da fonte da mensagem */
+    color: #333;
+}
+
+#empty-list-text {
+    font-size: 17px; /* Tamanho da fonte do texto quando a lista está vazia */
+    color: #666;
+}
+
+#empty-list-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#empty-list-text a:hover {
+    text-decoration: underline;
+}
+
+.actions {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.actions i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.check-icon {
+    color: #1e7e34;
+}
+.edit-icon {
+    color: #007bff;
+}
+
+.delete-form {
+    display: inline-block;
+}
+
+.delete-icon {
+    color: #bd2130;
+}
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* SHOW / CONTATO INDIVIDUAL */
+#view-cliente-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alteração aqui */
+    padding: 25px;
+}
+
+.double-container {
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    background-color: #f3f1f1ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+/* VOLTAR */
+#back-link img {
+    position: absolute;
+    top: 150px;
+    left: 25.5%;
+    width: 40px;
+}
+
+
+/* ADICIONAR CLIENTE */
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: absolute;
+    top: 140px;
+    left: 74.5%;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(18px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+/* #adic-link img {
+    position: absolute;
+    top: 110px;
+    left: 74.5%;
+    width: 40px;
+} */
+
+/* CREATE */
+/* Estilo para o container */
+.tree-container {
+    width: 40%; /* Largura do container */
+    margin: -300px auto 0; /* Ajustando o margin-top para mover o formulário para cima */
+    padding: 70px; /* Espaçamento interno do container */
+    background-color: #f9f9f9; /* Cor de fundo do container */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o título principal */
+#tree-title {
+    text-align: center; /* Centralizar o texto */
+}
+
+/* Estilo para os campos de entrada */
+.form-control {
+    width: 100%; /* Largura total do campo */
+    margin-bottom: 15px; /* Espaçamento inferior entre os campos */
+    padding: 10px; /* Espaçamento interno do campo */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilo para o botão de envio */
+.btn-primary {
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #e6e6e7; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+}
+
+/* Estilo para o botão de envio ao passar o mouse */
+.btn-primary:hover {
+    background-color: #d4d4d4; /* Alterar cor de fundo ao passar o mouse */
+}
+
+/* MOBILE */
+@media(max-width: 480px) {
+    #home-link {
+        display: none;
+    }
+}
