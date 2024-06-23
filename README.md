@@ -6,6 +6,7 @@ Mover os Arquivos do Projeto:
 
 Mover os arquivos para o diretório do servidor web:
 Windows (XAMPP): C:\xampp\htdocs\PagSys
+
 macOS (MAMP): /Applications/XAMPP/xamppfiles/htdocs/PagSys
 
 Acesse o phpMyAdmin (ou outra interface de gerenciamento de banco de dados) para criar um banco de dados novo.
