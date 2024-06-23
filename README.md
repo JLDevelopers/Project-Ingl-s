@@ -12,14 +12,6 @@ Importe os arquivos SQL encontrados no diretório "sql" para criar as tabelas ne
 Configurar os Arquivos do Projeto:
 
 Verifique se há um arquivo de configuração (provavelmente no diretório "config") onde você precisa definir as credenciais do banco de dados (nome do banco de dados, usuário, senha).
-Acessar o Projeto:
-
-Abra um navegador web e acesse http://localhost/PagSys para visualizar o projeto em execução.
-Comandos Passo a Passo
-Mover os arquivos para o diretório do servidor web:
-
-Windows (XAMPP): C:\xampp\htdocs\PagSys
-macOS (MAMP): /Applications/XAMPP/xamppfiles/htdocs/PagSys
 
 Configurar o banco de dados:
 
@@ -27,6 +19,12 @@ Abra o phpMyAdmin: http://localhost/phpmyadmin
 Crie um novo banco de dados: CREATE DATABASE mydb;
 Importe o arquivo SQL encontrado no diretório sql.
 Configurar as credenciais do banco de dados (em config.php):
+Acessar o Projeto:
+
+Comandos Passo a Passo
+Mover os arquivos para o diretório do servidor web:
+Windows (XAMPP): C:\xampp\htdocs\PagSys
+macOS (MAMP): /Applications/XAMPP/xamppfiles/htdocs/PagSys
 
 Acessar o projeto no navegador:
 http://localhost/PagSys
